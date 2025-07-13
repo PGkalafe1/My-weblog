@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وبلاگ من</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">وبلاگ من</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">خانه</a></li>
+                    <li><a href="#">مقالات</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn">ورود</button>
+                <button id="register-btn">ثبت نام</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>به وبلاگ من خوش آمدید</h2>
+            <p>مطالب جذاب و آموزشی در زمینه تکنولوژی، برنامه نویسی و طراحی وب</p>
+        </section>
+
+        <section class="blog-posts">
+            <article class="post">
+                <img src="images/post1.jpg" alt="تصویر مقاله اول">
+                <div class="post-content">
+                    <h3>آموزش HTML5 برای مبتدیان</h3>
+                    <p class="post-meta">نوشته شده توسط علی محمدی | ۱۵ تیر ۱۴۰۲</p>
+                    <p>در این مقاله به بررسی مفاهیم پایه HTML5 می‌پردازیم و تگ‌های اصلی را معرفی می‌کنیم...</p>
+                    <a href="#" class="read-more">ادامه مطلب</a>
+                </div>
+            </article>
+
+            <article class="post">
+                <img src="images/post2.jpg" alt="تصویر مقاله دوم">
+                <div class="post-content">
+                    <h3>راهنمای کامل CSS Flexbox</h3>
+                    <p class="post-meta">نوشته شده توسط مریم رضایی | ۱۰ تیر ۱۴۰۲</p>
+                    <p>Flexbox یک روش مدرن برای چیدمان عناصر در صفحه وب است که کار را بسیار ساده کرده است...</p>
+                    <a href="#" class="read-more">ادامه مطلب</a>
+                </div>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="جستجو...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="categories">
+                <h3>دسته‌بندی‌ها</h3>
+                <ul>
+                    <li><a href="#">HTML/CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Backend</a></li>
+                    <li><a href="#">طراحی وب</a></li>
+                </ul>
+            </div>
+            
+            <div class="popular-posts">
+                <h3>پربازدیدترین مطالب</h3>
+                <ul>
+                    <li><a href="#">آموزش React در ۳۰ روز</a></li>
+                    <li><a href="#">۱۰ نکته برای بهبود سئو</a></li>
+                    <li><a href="#">مقایسه Vue و Angular</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>درباره وبلاگ</h3>
+                <p>این وبلاگ به منظور اشتراک گذاری دانش و تجربیات در زمینه توسعه وب ایجاد شده است.</p>
+            </div>
+            <div class="footer-section">
+                <h3>لینک‌های سریع</h3>
+                <ul>
+                    <li><a href="#">صفحه اصلی</a></li>
+                    <li><a href="#">مقالات</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>شبکه‌های اجتماعی</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© ۱۴۰۲ تمام حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <!-- Modal برای ورود و ثبت نام -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">ورود به حساب کاربری</h2>
+            <form id="auth-form">
+                <div id="register-fields" style="display: none;">
+                    <input type="text" placeholder="نام کامل" id="fullname">
+                </div>
+                <input type="email" placeholder="ایمیل" id="email">
+                <input type="password" placeholder="رمز عبور" id="password">
+                <button type="submit" id="submit-btn">ورود</button>
+            </form>
+            <p id="toggle-auth">حساب کاربری ندارید؟ <a href="#">ثبت نام</a></p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
